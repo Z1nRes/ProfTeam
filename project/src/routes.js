@@ -2,8 +2,8 @@ import Admin from "./pages/Admin";
 import Shop from "./pages/Shop";
 import Basket from "./pages/Basket";
 import Auth from "./pages/Auth";
-import Device from "./pages/DevisePage";
-import { ADMIN_ROUTE, BASKET_ROUTE, DEVICE_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE, SHOP_ROUTE } from "./utils/consts";
+import ProductPage from "./pages/ProductPage";
+import { ADMIN_ROUTE, BASKET_ROUTE, PRODUCT_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE, SHOP_ROUTE } from "./utils/consts";
 
 
 export const authRoutes = [
@@ -31,7 +31,7 @@ export const publicRoutes = [
         Component: Auth
     },
     {
-        path: DEVICE_ROUTE + '/:id',
-        Component: Device
+        path: PRODUCT_ROUTE + '/:id',
+        Component: ProductPage
     }
 ]
