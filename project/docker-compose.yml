@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  react:
+    restart: on-failure:10
+    image: ${DOCKER_REGISTRY-}react
+    ports: 
+        - 3001:3000
+    container_name: react
+    build:
+      context: .
+      dockerfile: Dockerfile
